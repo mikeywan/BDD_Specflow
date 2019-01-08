@@ -1,6 +1,6 @@
 @echo off
 
-cd C:\Code_Root\Git\DebitSuccess\DS_Automation_Level3\AgeRangerAutomationSuite\
+cd C:\Git\AgeRangerAutomationSuite\
 nunit3-console.exe --labels=All  /out=TestResult.txt "--result=TestResult.xml;format=nunit2"  bin\Debug\AgeRangerWebUi.dll
 ..\packages\SpecFlow.2.2.1\tools\specflow.exe nunitexecutionreport AgeRangerTestSuite.csproj  /out:AgeRangerResult.html
 
